@@ -1,0 +1,337 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main-box{
+    width: 100%;
+    background: #f2f4f7;
+    padding:70px 10px;
+}
+
+.right-image2{
+    display: none;
+}
+
+
+.container{
+    width: 100%;
+    height: 500px;
+    max-width: 1250px;
+    margin: 0px auto;
+    padding: 10px 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.container > div{
+    width: 400px;
+    overflow: hidden;
+}
+
+.box-left-frist-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+.box-left img{
+    width: 200px;
+}
+
+.box-left-content{
+    width: 100%;
+    padding-left: 20px;
+}
+
+.box-left-content h3{
+    font-size: 36px;
+    font-weight: 300;
+    color: rgb(22, 22, 22);
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+
+.box-left-content p{
+    font-size: 15px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    color: rgb(85, 84, 84);
+}
+
+.addcount-box{
+    width: 100%;
+    padding-left: 20px;
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.account{
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid rgb(206, 204, 204);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+    position: relative;
+}
+.account:hover{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: all 0.2s ease-out;
+}
+.account::before{
+    content: '\f00d'; /* Font Awesome code for close (X) icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    background-color: rgba(11, 11, 11, 0.573);
+    z-index: 2;
+    border-radius: 50%;
+    color: rgb(223, 219, 219);
+    font-size: 13px;
+
+}
+
+
+.account img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+}
+
+
+.account h4{
+    font-size: 18px;
+    color: rgb(85, 84, 84);
+    padding:10px 5px;
+    font-weight: 300;
+    font-family: Helvetica, sans-serif;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0px !important;
+}
+
+.addccount-demi-box{
+    width: 100%;
+    height: 100%;
+    background: #f2f4f7;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+
+.beforenone::before{
+    display: none !important;
+}
+
+.cercle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #0866ff;
+    display: grid;
+    place-items: center;
+}
+
+.cercle i{
+    font-size: 30px;
+    color: white;
+}
+
+.account h4 a{
+    text-decoration: none;
+    color:#0866ff;;
+}
+
+
+.login-box{
+    width: 100%;
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.login-box form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    border-bottom: 1px solid rgb(191, 191, 191);
+    padding-bottom: 30px;
+}
+
+.login-box form input{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    padding: 0px 15px;
+    border: 1px solid #bebebe;
+    border-radius: 7px;
+    font-size: 17px;
+}
+.login-box form input::placeholder{
+    font-size: 17px;
+    color: #989797;;
+}
+
+.login-box form .Lofin-Button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: transparent;
+    background-color: #0866ff;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.login-box form .Lofin-Button:hover{
+    background-color: #1a72ff;
+}
+
+
+
+.login-box form span{
+    color: #1a72ff;
+    font-size: 14px;
+    font-weight:500;
+    font-family: Helvetica, sans-serif;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.login-box form span:hover{
+    text-decoration: underline;
+}
+
+
+
+.create-account{
+    outline: none;
+    border: none;
+    background-color: #42b72a;
+    padding: 13px 20px;
+    font-size: 17px;
+    color: white;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin:  25px  auto 5px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-account:hover{
+    background-color: #51ce38;
+}
+
+.last-heading{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.last-heading p{
+    color: rgb(80, 79, 79);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.last-heading p span{
+    color: black !important;
+    font-weight: 600;
+}
+
+
+.right-image2{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    display: none;
+}
+
+.right-image2 img{
+    width: 250px;
+}
+
+
+
+@media only screen and (max-width:800px){
+    .container{
+        flex-direction: column-reverse;
+        height: 100%;
+        padding: 0px 100px;
+    }
+    .right-image2{
+        display: block;
+        text-align: center;
+    }
+
+    .main-box{
+        padding: 30px 10px;
+    }
+
+    .login-box {
+        margin: 0px !important;
+    }
+
+    .logo1{
+        display: none !important;
+    }
+}
+
+
+@media only screen and (max-width:800px){
+    .container > div{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:530px){
+    .container{
+        padding: 0px 30px;
+    }
+}
+
+@media only screen and (max-width:330px){
+    .container{
+        padding: 0px 10px;
+    }
+    .main-box{
+        padding: 10px 10px;
+    }
+}
